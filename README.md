@@ -1,7 +1,7 @@
 # Advance-Hotel-Management-System-C-
 This is my University Introduction to Software Development Project . It has has Several features which you can check below in description.
 
-<h3>Product Introduction</h3>
+<h3>Project Introduction</h3>
 
 The Hotel Management System is a new self-contained software product which will be produced
 by the project team in order to overcome the problems that have occurred due to the current
@@ -12,7 +12,7 @@ calculations and all the other required tasks that has been specified by the cli
 outcome of this project will increase the efficiency of almost all the tasks done at the Hotel in a
 much convenient manner.
 
-<h3>Product Functions</h3>
+<h3>Project Functions</h3>
 <ul>
 <li>Make Reservations </li>
 <li>Search Rooms</li>
@@ -26,7 +26,14 @@ much convenient manner.
 <li>Manage Users (Add, Update, Delete)</li>
 </ul>
 
-<h3>Characteristics of User Classes</h3>
+<h3>Project Screenshots</h3>
+<img src="https://i.postimg.cc/mk1ZcXwV/ss1.png"/>
+<img src="https://i.postimg.cc/tRsFt9vv/ss2.png"/>
+<img src="https://i.postimg.cc/gc18g1fz/ss3.png"/>
+<img src="https://i.postimg.cc/wjpJpLqn/ss4.png"/>
+
+
+<h3>Characteristics of Users</h3>
 
 Owner:- <br>
 Hotel owner has the privilege of Monitoring and authorization of all the tasks handle by the
