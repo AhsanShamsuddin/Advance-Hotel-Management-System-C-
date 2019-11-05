@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D44324A6-C585-48BB-9DF7-C2C44F7342AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ISDProject</RootNamespace>
+    <AssemblyName>ISDProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeHomeControl.Designer.cs">
+      <DependentUpon>EmployeeHomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeRDamageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeRDamageControl.Designer.cs">
+      <DependentUpon>EmployeeRDamageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerEmployeeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerEmployeeControl.Designer.cs">
+      <DependentUpon>ManagerEmployeeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerHomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerHomeControl.Designer.cs">
+      <DependentUpon>ManagerHomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerRDamageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerRDamageControl.Designer.cs">
+      <DependentUpon>ManagerRDamageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerRReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerRReportControl.Designer.cs">
+      <DependentUpon>ManagerRReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerSearchControl.Designer.cs">
+      <DependentUpon>ManagerSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerEmployeeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerEmployeeControl.Designer.cs">
+      <DependentUpon>OwnerEmployeeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerForm.Designer.cs">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerHomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerHomeControl.Designer.cs">
+      <DependentUpon>OwnerHomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerHotelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerHotelControl.Designer.cs">
+      <DependentUpon>OwnerHotelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerRoomControl.Designer.cs">
+      <DependentUpon>OwnerRoomControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerRoomReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerRoomReportControl.Designer.cs">
+      <DependentUpon>OwnerRoomReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OwnerSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OwnerSearchControl.Designer.cs">
+      <DependentUpon>OwnerSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecepBillControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepBillControl.Designer.cs">
+      <DependentUpon>RecepBillControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepCheckOutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepCheckOutControl.Designer.cs">
+      <DependentUpon>RecepCheckOutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepHomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepHomeControl.Designer.cs">
+      <DependentUpon>RecepHomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepInvoiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepInvoiceControl.Designer.cs">
+      <DependentUpon>RecepInvoiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepReserveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepReserveControl.Designer.cs">
+      <DependentUpon>RecepReserveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecepSearchControl.Designer.cs">
+      <DependentUpon>RecepSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionistForm.Designer.cs">
+      <DependentUpon>ReceptionistForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeHomeControl.resx">
+      <DependentUpon>EmployeeHomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeRDamageControl.resx">
+      <DependentUpon>EmployeeRDamageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerEmployeeControl.resx">
+      <DependentUpon>ManagerEmployeeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerHomeControl.resx">
+      <DependentUpon>ManagerHomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerRDamageControl.resx">
+      <DependentUpon>ManagerRDamageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerRReportControl.resx">
+      <DependentUpon>ManagerRReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSearchControl.resx">
+      <DependentUpon>ManagerSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerEmployeeControl.resx">
+      <DependentUpon>OwnerEmployeeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerForm.resx">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerHomeControl.resx">
+      <DependentUpon>OwnerHomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerHotelControl.resx">
+      <DependentUpon>OwnerHotelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRoomControl.resx">
+      <DependentUpon>OwnerRoomControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerRoomReportControl.resx">
+      <DependentUpon>OwnerRoomReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerSearchControl.resx">
+      <DependentUpon>OwnerSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepBillControl.resx">
+      <DependentUpon>RecepBillControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepCheckOutControl.resx">
+      <DependentUpon>RecepCheckOutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepHomeControl.resx">
+      <DependentUpon>RecepHomeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepInvoiceControl.resx">
+      <DependentUpon>RecepInvoiceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepReserveControl.resx">
+      <DependentUpon>RecepReserveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepSearchControl.resx">
+      <DependentUpon>RecepSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceptionistForm.resx">
+      <DependentUpon>ReceptionistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_icon_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footer-logo_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_white_192x192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\owner-female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-mng-icon-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change_password_white_371277.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EHL-icon-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local_hotel_white_192x192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makefg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\010-magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makefg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makefg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-issue-travel-or-lifestyle-makes-taking-medications-difficult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1-2-106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITSB-Wrench-Transparent.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
